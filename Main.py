@@ -5,6 +5,12 @@ from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
 
+
+@app.get("/")
+async def write_assignment_heading():
+    heading = "Lohum Assignment\nby Parthvik Ajmera"
+    return heading
+
 @app.get("/")
 def read_root():
         url = "https://www.metal.com/Lithium-ion-Battery/202303240001"
