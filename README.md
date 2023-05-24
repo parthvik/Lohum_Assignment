@@ -1,10 +1,10 @@
 # Lohum_Assignment
 
-FastAPI Web Scraping
+# FastAPI Web Scraping
 
 This project demonstrates a simple FastAPI application that performs web scraping on a specific URL and retrieves average data using the BeautifulSoup library.
 
-Prerequisites
+<h3> Prerequisites
 
 Before running the application, ensure that you have the following dependencies installed:
 
@@ -13,7 +13,7 @@ BeautifulSoup
 Requests
 Installation
 
-Clone the repository:
+<h3> Clone the repository:
 shell
 Copy code
 $ git clone <repository_url>
