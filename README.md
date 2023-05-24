@@ -4,7 +4,7 @@
 
 This project demonstrates a simple FastAPI application that performs web scraping on a specific URL and retrieves average data using the BeautifulSoup library.
 
-<h3> Prerequisites
+<h3> Prerequisites</h3>
 
 Before running the application, ensure that you have the following dependencies installed:
 
@@ -13,7 +13,7 @@ BeautifulSoup
 Requests
 Installation
 
-<h3> Clone the repository:
+  <h3> Clone the repository:</h3>
 shell
 Copy code
 $ git clone <repository_url>
@@ -27,7 +27,7 @@ Copy code
 $ pip install -r requirements.txt
 Usage
 
-Start the FastAPI server:
+<h3>Start the FastAPI server: </h3>
 shell
 Copy code
 $ uvicorn main:app --reload
@@ -41,6 +41,7 @@ ruby
 Copy code
 http://localhost:8000/https://example.com
 Ensure that the link starts with "https://" to avoid receiving an error response.
-Handling Invalid Links
+
+<h3>Handling Invalid Links</h3>
 
 If an invalid link is provided (i.e., it does not start with "https://"), a 400 Bad Request error will be returned with the message "Invalid link provided."
