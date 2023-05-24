@@ -28,11 +28,11 @@ $ pip install -r requirements.txt
 Usage
 
 <h3>Start the FastAPI server: </h3>
-shell
-Copy code
-$ uvicorn main:app --reload
+shell. 
+Copy code. 
+$ uvicorn main:app --reload. 
 Open your web browser and access the following URL:
-arduino
+arduino. 
 Copy code
 http://localhost:8000/
 This will perform web scraping on the provided URL (https://www.metal.com/Lithium-ion-Battery/202303240001) and return the average data along with the assigned heading by Parthvik Ajmera.
