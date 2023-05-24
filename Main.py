@@ -18,7 +18,7 @@ def read_root():
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         avg=soup.find('span','strong___1JlBD priceDown___2TbRQ')
-        return {"Lohum Assignment: ":heading,"Average:":avg.text}
+        return {"Lohum Assignment: "heading,"Average:":avg.text}
 @app.get("/{link_id}")
 async def read_link(link_id: str):
     # Check if the link is valid (e.g., starts with "https://")
