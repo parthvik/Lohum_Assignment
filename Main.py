@@ -6,18 +6,19 @@ from fastapi import FastAPI, HTTPException
 app = FastAPI()
 
 
-@app.get("/")
-async def write_assignment_heading():
-    heading = "Lohum Assignment\nby Parthvik Ajmera"
-    return heading
+# @app.get("/")
+# async def write_assignment_heading():
+    
+#     return heading
 
 @app.get("/")
 def read_root():
         url = "https://www.metal.com/Lithium-ion-Battery/202303240001"
+        heading = "Lohum Assignment \n by Parthvik Ajmera"
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         avg=soup.find('span','strong___1JlBD priceDown___2TbRQ')
-        return {"Average:":avg.text}
+        return {heading,"Average:":avg.text}
 @app.get("/{link_id}")
 async def read_link(link_id: str):
     # Check if the link is valid (e.g., starts with "https://")
