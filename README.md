@@ -32,9 +32,9 @@ shell. <br>
 Copy code. <br>
 $ uvicorn main:app --reload. <br>
 Open your web browser and access the following URL: <br>
-Copy code
-http://localhost:8000/
-This will perform web scraping on the provided URL (https://www.metal.com/Lithium-ion-Battery/202303240001) and return the average data along with the assigned heading by Parthvik Ajmera.
+Copy code <br>
+http://localhost:8000/ <br>
+This will perform web scraping on the provided URL (https://www.metal.com/Lithium-ion-Battery/202303240001) and return the average data along with the assigned heading by Parthvik Ajmera. <br>
 To retrieve data from a specific link, append the link ID to the base URL. For example, to retrieve data from "https://example.com", access the following URL: <br>
 
 Copy code
@@ -44,3 +44,15 @@ Ensure that the link starts with "https://" to avoid receiving an error response
 <h3>Handling Invalid Links</h3>
 
 If an invalid link is provided (i.e., it does not start with "https://"), a 400 Bad Request error will be returned with the message "Invalid link provided."
+
+<h3>Deployment</h3>
+
+To deploy this code using Render and access it at the link https://lohum-parhtvik.onrender.com, follow these steps:<br>
+
+Sign up for an account on Render at https://render.com if you haven't already.<br>
+Create a new web service on Render and connect it to your Git repository where the code resides.<br>
+Configure the deployment settings to use the appropriate deployment command, which is typically uvicorn main:app --host 0.0.0.0 --port $PORT.<br>
+Deploy the application on Render.<br>
+Once the deployment is complete, you can access the application at the provided link https://lohum-parhtvik.onrender.com.<br>
+
+
