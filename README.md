@@ -34,12 +34,7 @@ $ uvicorn main:app --reload. <br>
 Open your web browser and access the following URL: <br>
 Copy code <br>
 http://localhost:8000/ <br>
-This will perform web scraping on the provided URL (https://www.metal.com/Lithium-ion-Battery/202303240001) and return the average data along with the assigned heading by Parthvik Ajmera. <br>
-To retrieve data from a specific link, append the link ID to the base URL. For example, to retrieve data from "https://example.com", access the following URL: <br>
-
-Copy code
-http://localhost:8000/https://example.com <br>
-Ensure that the link starts with "https://" to avoid receiving an error response.
+The web scraping is done using the BeautifulSoup library. The application sends a GET request to the specified URL and retrieves the content. It then parses the HTML content using BeautifulSoup and extracts the average data. The heading "Lohum Assignment" followed by "by Parthvik Ajmera" is added to the response.
 
 <h3>Handling Invalid Links</h3>
 
