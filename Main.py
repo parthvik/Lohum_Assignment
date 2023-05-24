@@ -14,11 +14,11 @@ app = FastAPI()
 @app.get("/")
 def read_root():
         url = "https://www.metal.com/Lithium-ion-Battery/202303240001"
-        heading = "Lohum Assignment \n by Parthvik Ajmera"
+        heading = " by Parthvik Ajmera"
         response = requests.get(url)
         soup = BeautifulSoup(response.content, 'html.parser')
         avg=soup.find('span','strong___1JlBD priceDown___2TbRQ')
-        return {heading,"Average:":avg.text}
+        return {"Lohum Assignment: ":heading,"Average:":avg.text}
 @app.get("/{link_id}")
 async def read_link(link_id: str):
     # Check if the link is valid (e.g., starts with "https://")
