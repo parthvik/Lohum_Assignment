@@ -1,5 +1,3 @@
-# Lohum_Assignment
-
 # FastAPI Web Scraping
 
 This project demonstrates a simple FastAPI application that performs web scraping on a specific URL and retrieves average data using the BeautifulSoup library.
